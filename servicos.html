@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Únika Eventos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .evento-card:hover {
+            cursor: pointer;
+        }
+
+        .hide-content {
+            max-height: 60px;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/logo.png" alt="Logo da Sua Empresa" class="logo">
+                </div>
+                <div class="col-lg-9">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="servicos.html">Serviços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="clientes.html">Nossos Clientes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contato.html">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="mt-5">Nossos Serviços</h1>
+                <div class="row">
+                    <!-- Evento 1 -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="evento-card" data-toggle="modal" data-target="#eventoModal1">
+                            <img src="images/casamento.jpg" alt="Evento 1" class="img-fluid">
+                            <h3>Casamentos</h3>
+                            <div class="hide-content">
+                                <p>
+                                    Transforme o seu casamento...
+                                </p>
+                            </div>
+                            <p class="read-more" onclick="toggleContent(this)">Leia mais...</p>
+                        </div>
+                    </div>
+					<!-- Evento 2 -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="evento-card" data-toggle="modal" data-target="#eventoModal1">
+                            <img src="images/casamento.jpg" alt="Evento 1" class="img-fluid">
+                            <h3>Casamentos</h3>
+                            <div class="hide-content">
+                                <p>
+                                    Transforme o seu casamento...
+                                </p>
+                            </div>
+                            <p class="read-more" onclick="toggleContent(this)">Leia mais...</p>
+                        </div>
+                    </div>
+
+                    <!-- Evento 3 -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="evento-card" data-toggle="modal" data-target="#eventoModal1">
+                            <img src="images/casamento.jpg" alt="Evento 1" class="img-fluid">
+                            <h3>Casamentos</h3>
+                            <div class="hide-content">
+                                <p>
+                                    Transforme o seu casamento...
+                                </p>
+                            </div>
+                            <p class="read-more" onclick="toggleContent(this)">Leia mais...</p>
+                        </div>
+                    </div>
+					<!-- Evento 4 -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="evento-card" data-toggle="modal" data-target="#eventoModal1">
+                            <img src="images/casamento.jpg" alt="Evento 1" class="img-fluid">
+                            <h3>Casamentos</h3>
+                            <div class="hide-content">
+                                <p>
+                                    Transforme o seu casamento...
+                                </p>
+                            </div>
+                            <p class="read-more" onclick="toggleContent(this)">Leia mais...</p>
+                        </div>
+                    </div>
+					<!-- Evento 5 -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="evento-card" data-toggle="modal" data-target="#eventoModal1">
+                            <img src="images/casamento.jpg" alt="Evento 1" class="img-fluid">
+                            <h3>Casamentos</h3>
+                            <div class="hide-content">
+                                <p>
+                                    Transforme o seu casamento...
+                                </p>
+                            </div>
+                            <p class="read-more" onclick="toggleContent(this)">Leia mais...</p>
+                        </div>
+                    </div>
+					<!-- Evento 6 -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="evento-card" data-toggle="modal" data-target="#eventoModal1">
+                            <img src="images/casamento.jpg" alt="Evento 1" class="img-fluid">
+                            <h3>Casamentos</h3>
+                            <div class="hide-content">
+                                <p>
+                                    Transforme o seu casamento...
+                                </p>
+                            </div>
+                            <p class="read-more" onclick="toggleContent(this)">Leia mais...</p>
+                        </div>
+                    </div>
+                    <!-- Adicione mais eventos conforme necessário -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <!-- Evento 1 Modal -->
+    <div class="modal fade" id="eventoModal1" tabindex="-1" role="dialog" aria-labelledby="eventoModal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventoModal1Label">Casamentos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/casamento.jpg" alt="Evento 1" class="img-fluid">
+                    <p>
+                        Transforme o seu casamento em um espetáculo inesquecível com os nossos serviços de
+                        sonorização! Na ÚNIKA, entendemos a importância de cada momento desse
+                        dia especial. Com sistemas de áudio de última geração, garantimos que cada palavra dos
+                        votos, cada nota da música e cada suspiro de emoção seja vivido intensamente. Deixe-nos
+                        criar a trilha sonora perfeita para o seu amor, proporcionando uma experiência auditiva única
+                        para você, seu parceiro e todos os seus convidados. Conte conosco para tornar o seu
+                        casamento ainda mais memorável com uma sonorização que celebra o amor em cada acorde. Entre
+                        em contato e descubra como podemos transformar o seu grande dia em uma sinfonia de emoções!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Evento 2 Modal -->
+    <!-- Adicione mais modais conforme necessário -->
+
+    <footer class="fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    &copy; 2023 A Únika Eventos
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleContent(element) {
+            var hideContent = element.previousElementSibling;
+            hideContent.style.maxHeight = hideContent.style.maxHeight ? null : "60px";
+            element.innerText = hideContent.style.maxHeight ? "Leia menos..." : "Leia mais...";
+        }
+    </script>
+</body>
+
+</html>
